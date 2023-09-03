@@ -1,0 +1,67 @@
+/* styles.css */
+
+/* Estilos para Hyperlink */
+.default,
+.default:hover,
+.default:focused {
+    -fx-text-decoration: none; /* Sin subrayado */
+    -fx-underline: false; /* Sin subrayado */
+    -fx-text-fill: white; /* Color del texto (por ejemplo, blanco) */
+    -fx-border-width: 0; /* Ancho del borde cuando está enfocado (0 para ocultar) */
+
+}
+
+.transparent-textfield {
+    -fx-text-fill: white; /* Color del texto (por ejemplo, blanco) */
+    -fx-background-color: transparent; /* Fondo transparente */
+    -fx-border-color: white; /* Color del borde inferior (blanco en este caso) */
+    -fx-border-width: 0 0 1 0; /* Grosor del borde (solo el borde inferior) */
+}
+
+.transparent-textfieldResult {
+    -fx-text-fill: white; /* Color del texto (por ejemplo, blanco) */
+    -fx-background-color: transparent; /* Fondo transparente */
+}
+
+
+.button-conversion {
+    -fx-background-radius: 10px;
+    -fx-background-color: rgb(1, 84, 84);
+    -fx-text-fill: white; /* Color del texto (por ejemplo, blanco) */
+}
+
+.button-conversion:hover {
+    -fx-background-color: #233DFF;
+}
+
+/* Estilos para ComboBox */
+.combo-box {
+    -fx-background-color: #000a47; /* Color de fondo */
+    -fx-font-size: 14px; /* Tamaño de fuente */
+    -fx-border-width: 3px; /* Grosor del borde */
+    -fx-padding: 5px; /* Espacio interno */
+    -fx-background-radius: 10px;
+
+}
+.combo-box .list-cell {
+    -fx-text-fill: white; /* Cambia el color de texto en la lista desplegable */
+    -fx-background-color: #000a47; /* Color de fondo */
+
+}
+
+.combo-box .list-cell:hover {
+    -fx-background-color: #233DFF; /* Color de fondo */
+
+}
+
+.combo-box:focused {
+    -fx-border-color: #003247; /* Cambiar el color del borde cuando el ComboBox está enfocado */
+}
+
+.main-buttons {
+    -fx-background-color: transparent; /* Color de fondo */
+}
+
+.main-buttons:hover {
+    -fx-background-color: #233DFF; /* Color de fondo */
+}

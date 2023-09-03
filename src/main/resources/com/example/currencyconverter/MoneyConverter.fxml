@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="445.0" prefWidth="458.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.currencyconverter.MoneyConverterController">
+   <children>
+      <AnchorPane layoutY="-1.0" prefHeight="474.0" prefWidth="458.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="495.0" fitWidth="467.0" layoutX="108.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@../../../img/MONEYCONVERTER.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="66.0" layoutY="63.0" text="Coversion de Monedas en Tiempo Real con API" textFill="WHITE">
+               <font>
+                  <Font name="Arial Unicode MS" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="91.0" layoutY="89.0" text="Para Valores mas exactos conectese a internet" textFill="WHITE">
+               <font>
+                  <Font name="Arial Unicode MS" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="mainTextLabel" layoutX="68.0" layoutY="191.0" text="Ingrese la cantidad de dinero que desea conversionar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="mainTextField" alignment="CENTER" layoutX="143.0" layoutY="220.0" prefHeight="46.0" prefWidth="177.0" styleClass="transparent-textfield" stylesheets="@../../../CSS/Styles.css">
+               <font>
+                  <Font size="24.0" />
+               </font></TextField>
+            <Button fx:id="mainButton" alignment="CENTER" layoutX="168.0" layoutY="293.0" mnemonicParsing="false" onAction="#validatingNumericalInput" prefHeight="38.0" prefWidth="122.0" styleClass="button-conversion" stylesheets="@../../../CSS/Styles.css" text="ACEPTAR" textFill="WHITE">
+               <font>
+                  <Font name="Arial Unicode MS" size="16.0" />
+               </font></Button>
+            <ComboBox fx:id="choiceCoins" layoutX="37.0" layoutY="178.0" prefHeight="46.0" prefWidth="386.0" stylesheets="@../../../CSS/Styles.css" visible="false">
+               <styleClass>
+                  <String fx:value="arrow-button" />
+                  <String fx:value="combo-box" />
+               </styleClass>
+               <effect>
+                  <Blend />
+               </effect></ComboBox>
+            <Button fx:id="convertCoinsButton" layoutX="168.0" layoutY="246.0" mnemonicParsing="false" onAction="#convertCurrencies" prefHeight="38.0" prefWidth="122.0" styleClass="button-conversion" stylesheets="@../../../CSS/Styles.css" text="ACEPTAR" visible="false">
+               <font>
+                  <Font name="Arial Unicode MS" size="16.0" />
+               </font></Button>
+            <Label fx:id="textConversion" layoutX="73.0" layoutY="148.0" text="Seleccione la moneda que desea convertir su dinero" textFill="WHITE" visible="false">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="textAmountConverted" alignment="CENTER" layoutX="37.0" layoutY="165.0" prefHeight="26.0" prefWidth="385.0" text="El ajuste de € 200,00" textAlignment="CENTER" textFill="WHITE" visible="false">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="textCurrencySelection" alignment="CENTER" layoutX="21.0" layoutY="209.0" prefHeight="26.0" prefWidth="435.0" text="Euro (€) a Dolar Americano ($) es de:" textAlignment="CENTER" textFill="WHITE" visible="false">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="conversionResultText" alignment="CENTER" layoutX="26.0" layoutY="256.0" prefHeight="26.0" prefWidth="408.0" text="US$ 199.00" textAlignment="CENTER" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="backButton" layoutX="122.0" layoutY="381.0" mnemonicParsing="false" onAction="#backOriginalPanel" prefHeight="38.0" prefWidth="224.0" styleClass="button-conversion" stylesheets="@../../../CSS/Styles.css" text="¿Hacemos otra Conversión?" visible="false">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

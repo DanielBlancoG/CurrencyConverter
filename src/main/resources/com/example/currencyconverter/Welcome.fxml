@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="471.0" prefWidth="786.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.currencyconverter.MainConverterController">
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="473.0" fitWidth="378.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="408.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@../../../img/CONVERSOR.png" />
+               </image>
+            </ImageView>
+            <Hyperlink fx:id="currencyConverter" alignment="CENTER" contentDisplay="RIGHT" layoutX="-9.0" layoutY="175.0" onAction="#showCurrencyConverter" prefHeight="47.0" prefWidth="319.0" stylesheets="@../../../CSS/Styles.css" text="Conversor Divisas" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="default" />
+                  <String fx:value="mainElements" />
+               </styleClass>
+            </Hyperlink>
+            <Hyperlink alignment="CENTER" layoutX="-1.0" layoutY="237.0" onAction="#showTemperatureConverter" prefHeight="47.0" prefWidth="319.0" stylesheets="@../../../CSS/Styles.css" text="Conversor Temperatura" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="186.8">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="default" />
+                  <String fx:value="mainElements" />
+               </styleClass>
+            </Hyperlink>
+            <Hyperlink layoutX="235.0" layoutY="392.0" styleClass="default" stylesheets="@../../../CSS/Styles.css" text="Creador:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink layoutX="219.0" layoutY="416.0" prefHeight="24.0" prefWidth="100.0" styleClass="default" stylesheets="@../../../CSS/Styles.css" text="Daniel Blanco" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Hyperlink>
+            <HBox layoutX="14.0" layoutY="14.0" prefHeight="47.0" prefWidth="114.0" AnchorPane.bottomAnchor="424.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="672.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button fx:id="closedButton" alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#closingApplication" prefHeight="31.0" prefWidth="32.0" styleClass="main-buttons" stylesheets="@../../../CSS/Styles.css">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../img/icons8-cerrar-ventana-96.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="minimizedButton" alignment="BOTTOM_CENTER" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#minimizedApplication" prefHeight="31.0" prefWidth="32.0" styleClass="main-buttons" stylesheets="@../../../CSS/Styles.css">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../img/icons8-minimizar-la-ventana-96.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="originalContent" layoutX="319.0" prefHeight="473.0" prefWidth="467.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="473.0" fitWidth="467.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <Image url="@../../../img/CONVERSORPORTADA.png" />
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
