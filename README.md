@@ -35,7 +35,7 @@ Extra Personal:
 
 Para buen funcionamiento descargue desde el siguiente enlace:
 
-https://objects.githubusercontent.com/github-production-release-asset-2e65be/686756837/a9cc1857-d38c-46e3-9d70-dcb43a6ddd3b?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230903%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230903T211552Z&X-Amz-Expires=300&X-Amz-Signature=6fc6620924f15b115926d7802614ecd1b2864d3c6521708d492201867d1a0c0a&X-Amz-SignedHeaders=host&actor_id=129682009&key_id=0&repo_id=686756837&response-content-disposition=attachment%3B%20filename%3DCurrencyConverter.rar&response-content-type=application%2Foctet-stream
+https://github.com/DanielBlancoG/CurrencyConverter/releases/download/untagged-b069ef92f8282c70203b/CurrencyConverter.rar
 
 #### Instrucciones para Ejecución:
 
